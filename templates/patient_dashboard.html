@@ -28,13 +28,13 @@
     <li id="dash_dashboard"><a class="waves-effect" href="#!"><b>Dashboard</b></a></li>
      <!-- Switch -->
   
-    <a class="waves-effect waves-light btn-large blue"  onclick="window.location.href='{{url_for('pin')}}';">PIN GENERATE </a>
+    <a class="waves-effect waves-light btn-large blue"  onclick="window.location.href='{{url_for('generate_pin_route')}}';">PIN GENERATE </a>
 
 
   <p class="flow-text" style="text-align: center;">{{pin}}</p> 
-  <a class="waves-effect waves-light btn-large blue"  onclick="window.location.href='{{url_for('allow')}}';">ALLOW ACCESS </a>
+  <a class="waves-effect waves-light btn-large blue"  onclick="window.location.href='{{url_for('allow_access_route')}}';">ALLOW ACCESS </a>
   <p class="flow-text" style="text-align: center;">{{access}}</p>
-  <a class="waves-effect waves-light btn-large blue"  onclick="window.location.href='{{url_for('deny')}}';"> BLOCK ACCESS</a>
+  <a class="waves-effect waves-light btn-large blue"  onclick="window.location.href='{{url_for('block_access_route')}}';"> BLOCK ACCESS</a>
   <p class="flow-text" style="text-align: center;">{{deny}}</p>
     </ul>
   </ul>

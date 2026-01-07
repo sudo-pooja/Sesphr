@@ -10,8 +10,8 @@ from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
-conn=mysql.connector.connect(host="localhost",username="root",password="",database="sesphr")
-conn1=mysql.connector.connect(host="localhost",username="root",password="",database="clone")
+conn=mysql.connector.connect(host="127.0.0.1",username="root",password="root",database="sesphr", port=3306)
+conn1=mysql.connector.connect(host="127.0.0.1",username="root",password="root",database="clone", port=3306)
 cursor = conn.cursor()
 cursor1 = conn1.cursor()
 
